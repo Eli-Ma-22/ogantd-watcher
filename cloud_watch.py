@@ -23,12 +23,14 @@ WALLETS = {
 }
 # Per wallet: which coins to report. None = every coin. Otherwise a set of mints.
 WATCH = {
-    "ogantd": None,
+    "ogantd": None,                                                   # every coin he trades
 }
-KNOWN = {}
+KNOWN = {
+    "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr": "BORDR",          # Bordrless (the real one; 17 fakes share the ticker)
+}
 # Market-cap alerts. mint None = resolve by symbol on DexScreener at run time.
 MC_ALERTS = [
-    {"symbol": "BORDR", "mint": None, "above": 7_000_000, "rearm_below": 6_000_000},
+    {"symbol": "BORDR", "mint": "6Mix12LiHrQFojaQEnfPUC65Qkwd6X4Y5Qg93oFbordr", "above": 7_000_000, "rearm_below": 6_000_000},
 ]
 
 # ------------------------------------------------------------------ helpers --
