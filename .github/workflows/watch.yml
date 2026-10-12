@@ -1,4 +1,4 @@
-name: Opiumsol watcher
+name: ogantd watcher
 on:
   schedule:
     - cron: "*/5 * * * *"
