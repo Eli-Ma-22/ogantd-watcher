@@ -1,1 +1,10 @@
-{"last_sig": {}, "fired": {}, "mints": {}}
+{
+ "last_sig": {
+  "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP": "5GBKA6fWUndfGEaEMvuLWw8MaCoCPwQUj8vdEdRR1HPRMsbqVwzKEpNcRHffdaMyWvnmP9hrtYyHAg8jqRv8KFfQ"
+ },
+ "fired": {},
+ "mints": {
+  "BORDR": "7dV62dcgMMGARsMu1sUR9tskmwcCFFRA4Qp5yS3eG3hG"
+ },
+ "last_run": "2026-10-12 06:04 UTC"
+}
