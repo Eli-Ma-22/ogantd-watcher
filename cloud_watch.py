@@ -136,6 +136,8 @@ def describe(sig, wallet, who):
         if abs(d) < 1e-9 or (watch is not None and mint not in watch):
             continue
         side = "BUY " if d > 0 else "SELL"
+        if d > 0 and sol > -0.01:      # tokens arrived but no SOL spent = airdrop/spam, not a buy
+            continue
         m = None
         try: m = dex_token(mint)
         except Exception: pass
@@ -219,7 +221,9 @@ def answer_commands(state):
             for a in MC_ALERTS:
                 m = dex_token(a["mint"])
                 if m and m.get("mc"):
-                    lines.append(f"{a['symbol']}: MC {fmt_usd(m['mc'])}, price ${m['price']:.6f} (target {fmt_usd(a['above'])})")
+                    pct = 100 * m["mc"] / a["above"]
+                    lines.append(f"{a['symbol']}: MC {fmt_usd(m['mc'])}, price ${m['price']:.6f}\n"
+                                 f"{pct:.0f}% of the {fmt_usd(a['above'])} target (needs x{a['above']/m['mc']:.2f})")
                 else:
                     lines.append(f"{a['symbol']}: market cap unavailable")
             tg("\n".join(lines) + "\n(cloud watcher, checked just now)")
