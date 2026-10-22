@@ -1,6 +1,6 @@
 {
  "last_sig": {
-  "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP": "32tc7a5vsUc7sadE79hYfNBx4HgzqgWtPwfKt6Pa2WTnjh96KGEWm85oLBBdAMYLukGyhRYN9EUzhumpBqzqKrMf"
+  "215nhcAHjQQGgwpQSJQ7zR26etbjjtVdW74NLzwEgQjP": "5p7P3xCphbW9XTiQjArFDpwzcHCqNggyoUtdYRZXKjnKg9USqFCe2U9UZgyuLG6bs3C5muk734ATrdfpWZrSqKdZ"
  },
  "fired": {
   "BORDR_above_7000000": false
@@ -8,6 +8,6 @@
  "mints": {
   "BORDR": "7dV62dcgMMGARsMu1sUR9tskmwcCFFRA4Qp5yS3eG3hG"
  },
- "last_run": "2026-10-22 20:36 UTC",
+ "last_run": "2026-10-22 23:33 UTC",
  "tg_offset": 604316162
 }
